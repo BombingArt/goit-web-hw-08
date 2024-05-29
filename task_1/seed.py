@@ -14,7 +14,7 @@ with open('json/authors.json', 'r', encoding='utf-8') as file:
         )
         author.save()
 
-with open('json/qoutes.json', 'r', encoding='utf-8') as file:
+with open('json/quotes.json', 'r', encoding='utf-8') as file:
     quotes_data = json.load(file)
     for quote_data in quotes_data:
         author = Author.objects(fullname=quote_data['author']).first()
