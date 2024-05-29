@@ -2,7 +2,7 @@ from mongoengine import connect
 import configparser
 
 config = configparser.ConfigParser()
-config.read(r'c:\Users\ABank\Desktop\goit-web-hw-08\task_1\config.ini')
+config.read(config.ini')
 
 mongo_user = config.get('DB', 'USER')
 mongodb_pass = config.get('DB', 'PASS')
